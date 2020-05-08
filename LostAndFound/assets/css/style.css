@@ -1,0 +1,159 @@
+
+body {
+    background-color: #f8f9fa;
+}
+
+.main-nav {
+    padding: 0.5% 10% 0.5% 10%;
+}
+
+.card {
+    min-width: 400px;
+    background-color: #fff;
+    /* box-shadow: 0px 0 30px 0px #0000000f; */
+    border-radius: 10px;
+    border: none;
+    padding: 30px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    min-height: 510px;
+}
+
+.card .about {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.card .about h3, .card .about .lead {
+    font-weight: 300;
+    margin: 0;
+}
+
+.card .about h3 {
+    font-size: 24px;
+}
+
+.card .about .lead {
+    color: #aaa;
+}
+
+.card-h {
+    position: relative;
+    margin: 15px;
+    background-color: #fbfbfb;
+    transition: box-shadow .25s;
+    border-radius: 10px;
+    box-shadow: 0px 5px 0px 0px #00000014;
+    padding: 0;
+    min-width: 400px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-h .card-image img {
+    display: block;
+    border-radius: 2px 2px 0 0;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.card-h .card-content {
+    padding: 15px 10px 0 0;
+    border-radius: 0 0 2px 2px;
+}
+
+.card-h .card-content p {
+    margin: 0;
+    font-size: 14px;
+    color: #555555;
+}
+
+/*----3.a.Horizontal----*/
+
+.card-h.horizontal .card-image img {
+    height: 100px;
+    width: 100px;
+}
+
+.card-h.horizontal {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.card-h.horizontal.small .card-image, .card-h.horizontal.medium .card-image, .card-h.horizontal.large .card-image {
+    height: 100%;
+    max-height: none;
+    overflow: visible;
+}
+
+.card-h.horizontal .card-image img {
+    width: auto;
+    height: 180px;
+    margin-right: 20px;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.card-h.horizontal .card-stacked {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    position: relative;
+}
+
+.card-h.horizontal .card-stacked .card-content {
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+}
+
+.card-h .card-image {
+    position: relative;
+}
+
+.card-h .btn {
+    font-size: 14px;
+    /* padding: 20px 30px; */
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    min-width: 100px;
+}
+
+.card-content h3 {
+    font-size: 1.2em;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 0 0 10px 0;
+    padding: 0;
+    color: #555555;
+}
+
+@media screen and (max-width: 770px) {
+    .card-h.horizontal {
+        justify-content: center;
+        padding: 30px;
+        display: block;
+    }
+}
+
+.main-nav {
+    margin-bottom: 50px;
+}
+
+.author {
+    margin-bottom: 0;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    float: right;
+    color: #00000073;
+}
